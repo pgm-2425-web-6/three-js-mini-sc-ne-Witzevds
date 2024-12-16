@@ -28,14 +28,14 @@ scene.add(pointLight);
 
 const mtlLoader = new MTLLoader();
 mtlLoader.load(
-  "./textures/bottle/14042_750_mL_Wine_Bottle_r_v1_L3.mtl",
+  "/textures/bottle/14042_750_mL_Wine_Bottle_r_v1_L3.mtl",
   (materials) => {
     materials.preload();
 
     const objLoader = new OBJLoader();
     objLoader.setMaterials(materials);
     objLoader.load(
-      "./textures/bottle/14042_750_mL_Wine_Bottle_r_v1_L3.obj",
+      "/textures/bottle/14042_750_mL_Wine_Bottle_r_v1_L3.obj",
       (object) => {
         object.scale.set(1, 1, 1);
         object.position.set(0, 0, 0);
